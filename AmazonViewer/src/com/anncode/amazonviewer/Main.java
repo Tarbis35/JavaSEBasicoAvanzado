@@ -10,9 +10,19 @@ import com.anncode.amazonviewer.model.Chapter;
 import com.anncode.amazonviewer.model.Magazine;
 import com.anncode.amazonviewer.model.Movie;
 import com.anncode.amazonviewer.model.Serie;
-import com.anncode.makereport.Report;
+
 import com.anncode.util.AmazonUtil;
 
+
+/**
+ * <h1>Amazon Viewer</h1>
+ * Amazonviewer es un programa que permite visualizar Movies,
+ * Sseries con sus respectivos Chapter, Books y Magazines.
+ *
+ * @author leonardo
+ * @version 1.1
+ * @since 2018
+ * */
 public class Main {
 
 	public static void main(String[] args) {
@@ -269,10 +279,7 @@ public class Main {
 	
 	public static void makeReport() {
 		
-		Report report = new Report();
-		report.setNameFile("reporte");
-		report.setExtension("txt");
-		report.setTitle(":: VISTOS ::");
+
 		String contentReport = "";
 		
 		for (Movie movie : movies) {
@@ -300,8 +307,7 @@ public class Main {
 			}
 		}
 
-		report.setContent(contentReport);
-		report.makeReport();
+
 		System.out.println("Reporte Generado");
 		System.out.println();
 	}
@@ -309,11 +315,7 @@ public class Main {
 	public static void makeReport(Date date) {
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd-h-m-s-S");
 		String dateString = df.format(date);
-		Report report = new Report();
-		
-		report.setNameFile("reporte" + dateString);
-		report.setExtension("txt");
-		report.setTitle(":: VISTOS ::");
+
 		
 		
 		SimpleDateFormat dfNameDays = new SimpleDateFormat("E, W MMM Y");
@@ -343,8 +345,7 @@ public class Main {
 				
 			}
 		}
-		report.setContent(contentReport);
-		report.makeReport();
+
 		
 		System.out.println("Reporte Generado");
 		System.out.println();

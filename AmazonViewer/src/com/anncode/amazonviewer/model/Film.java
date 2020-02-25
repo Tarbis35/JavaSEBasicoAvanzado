@@ -1,6 +1,6 @@
 package com.anncode.amazonviewer.model;
 
-public class Film {
+public abstract class Film {
 	
 	private String title;
 	private String genre;
@@ -9,7 +9,16 @@ public class Film {
 	private short year;
 	private boolean viewed;
 	
-	
+	/**
+	 * <h1>Film</h1>
+	 *
+	 * Deberia ser una clase abstracta
+	 * <p>
+	 *     Esta clase es la clase base de la familia Films, si
+	 *     fuera abstracta no se podria crear instancias de ella
+	 * </p>
+	 *
+	 * */
 	
 	public Film(String title, String genre, String creator, int duration) {
 		super();
@@ -67,7 +76,7 @@ public class Film {
 		this.viewed = viewed;
 	}
 	
-	
+	public abstract void view();
 	
 
 }

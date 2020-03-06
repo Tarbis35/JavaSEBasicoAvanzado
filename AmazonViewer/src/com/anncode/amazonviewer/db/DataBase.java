@@ -1,10 +1,12 @@
 package com.anncode.amazonviewer.db;
 
 public class DataBase {
-    public static final String URL = "jdbc.mysql://127.0.0.1:3306/";
+    public static final String URL = "jdbc:mysql://127.0.0.1:3306/";
     public static final String DB = "amazonviewer";
     public static final String USER = "amazonviewer";
     public static final String PASSWORD = "welcome1";
+    public static final String TIMEZONE = "?serverTimezone=UTC";
+
 
     public static final String TMOVIE = "movie";
     public static final String TMOVIE_ID = "id";

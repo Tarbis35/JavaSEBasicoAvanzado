@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="AmazonViewer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AmazonViewer_jar</output-path>
+    <root id="archive" name="AmazonViewer.jar">
+      <element id="module-output" name="AmazonViewer" />
+    </root>
+  </artifact>
+</component>
